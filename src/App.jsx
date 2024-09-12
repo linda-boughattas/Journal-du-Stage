@@ -1,11 +1,11 @@
-/* import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css' */
-
+import './App.css' 
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { useState } from "react";
 import { DayPicker } from "react-day-picker";
 import "react-day-picker/style.css";
+import { fr } from "date-fns/locale";
+import { Button } from "react-bootstrap"; // Import Button from React Bootstrap
+
 
 export function MyDatePicker() {
   const [selected, setSelected] = useState(null);
@@ -18,90 +18,44 @@ export function MyDatePicker() {
 
   const handleDaySelect = (day) => {
     setSelected(day);
-    setShowMessage(true); 
+    setShowMessage(true);
   };
 
   return (
-    <div>
-      <DayPicker
-        startMonth={new Date(2024, 7)} // August 2024
-        endMonth={new Date(2024, 8)} // September 2024
-        mode="single"
-        selected={selected}
-        onSelect={handleDaySelect}
-        disabled={[
-          { from: new Date(2024, 7, 1), to: new Date(2024, 7, 15) }, // Disable August 1-15
-          { from: new Date(2024, 8, 14), to: new Date(2024, 8, 30) }, // Disable September 14-30
-        ]}
-        footer={
-          selected ? `Selected: ${selected.toLocaleDateString()}` : "Pick a day."
-        }
-      />
+    <div className="datepicker-container">
+      {/* Calendar with blur effect when the popover is shown */}
+      <div className={showMessage ? "calendar-blur" : ""}>
+        <DayPicker
+          startMonth={new Date(2024, 7)} // August 2024
+          endMonth={new Date(2024, 8)} // September 2024
+          mode="single"
+          selected={selected}
+          onSelect={handleDaySelect}
+          disabled={[
+            { from: new Date(2024, 7, 1), to: new Date(2024, 7, 15) }, // Disable August 1-15
+            { from: new Date(2024, 8, 14), to: new Date(2024, 8, 30) }, // Disable September 14-30
+          ]}
+          footer={
+            selected
+              ? ``
+              : "Choisis un jour."
+          }
+          locale={fr}
+        />
+      </div>
 
-      {/* Conditionally render the div when a day is selected */}
+      {/* Popover Message */}
       {showMessage && (
-        <div
-          style={{
-            marginTop: "20px",
-            padding: "10px",
-            border: "1px solid #ccc",
-            borderRadius: "5px",
-            position: "relative",
-            maxWidth: "200px",
-          }}
-        >
-          You selected a day!
-          {/* Close button */}
-          <button
-            onClick={handleClose}
-            style={{
-              position: "absolute",
-              top: "5px",
-              right: "10px",
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              fontSize: "16px",
-              fontWeight: "bold",
-              color: "#888",
-            }}
-          >
-            X
-          </button>
+        <div className="popover-message">
+          <p>{selected.toLocaleDateString()}</p>
+          <h3>Vous avez sélectionné un jour !</h3>
+          <Button variant="secondary" onClick={handleClose}>
+            Fermer
+          </Button>
         </div>
       )}
     </div>
   );
 }
-
-/* 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-} */
 
 export default MyDatePicker
