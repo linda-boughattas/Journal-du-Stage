@@ -2,6 +2,10 @@ body{
   display:flex;
   justify-content: center;
   align-items: center;
+  background-image: url("./assets/bg.png");
+  background-size: cover;
+  min-width: 320px;
+  min-height: 100vh;
 }
 .datepicker-container {
   position: relative;
@@ -27,6 +31,20 @@ body{
   border-radius: 5px;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+.popover-message--date{
+  font-size:smaller;
+}
+.popover-message--date,
+.popover-message--expression,
+.popover-message--mood {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5; 
+}
+.popover-message--note{
+  margin-top: 15px;
 }
 
 .popover-message button {
