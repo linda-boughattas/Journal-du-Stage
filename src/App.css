@@ -1,23 +1,19 @@
-body, html{
-padding: 0;
-margin: 0;
-}
-body{
-  display:flex;
+body {
+  display: flex;
+  flex: 1;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("./assets/bg.png");
+  background-image: url('./assets/bg.png');
   background-size: cover;
-  min-width: 320px;
-  min-height: 100vh;
 }
-.datepicker-container>header{
+
+.datepicker-container > header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.datepicker-container>header>img{
+.datepicker-container > header > img {
   height: 25px;
   width: auto;
 }
@@ -36,39 +32,3 @@ body{
 .calendar-blur {
   filter: blur(5px);
 }
-
-.popover-message {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  z-index: 10;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 100%;
-}
-.popover-message--date{
-  font-size:smaller;
-}
-.popover-message--date,
-.popover-message--expression,
-.popover-message--mood {
-  margin: 0;
-  padding: 0;
-  line-height: 1.5; 
-}
-.popover-message--note{
-  margin-top: 15px;
-}
-
-.popover-message button {
-  margin-top: 10px;
-}
-
