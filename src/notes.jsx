@@ -7,12 +7,12 @@ const notes = [
   },
   {
     date: '2024-08-15',
-    mood: 'enthousiaste',
+    mood: 'admirative',
     note: "L'usine est immense, très bien organisée et extrêmement propre. Ce qui m’a le plus impressionné, ce sont les voies piétonnes avec les marquages au sol et les indications qui accélèrent le déplacement du personnel, ainsi que les écrans géants diffusant leurs réalisations, leur taux de productivité, leurs objectifs une citation de la semaine et la musique ambiante, ce qui témoigne de leur attention aux détails. De plus, les chaines de productions étaient intelligemment structurées. La section entrepôt était gigantesque, rappelant celle d'Amazon. L’espace de réunion, la zone de repos, la cantine, les bureaux... Tout était un plaisir pour les yeux.",
   },
   {
     date: '2024-08-18',
-    mood: 'excitée',
+    mood: 'motivée',
     note: "Pour réduire les coûts d'achat de certains produits provenant d'Allemagne, Draxlmaier achète un prototype similaire auprès d'un fournisseur local. Les services informatiques examinent le produit, vérifient s'il répond aux exigences, puis approuvent ou rejettent l'achat.",
   },
   {
@@ -22,7 +22,7 @@ const notes = [
   },
   {
     date: '2024-08-20',
-    mood: 'excitée',
+    mood: 'motivée',
     note: "J'ai pris un aperçu de la façon dont les techniciens de Telecom vérifient la vitesse des fibres optiques à l'usine Draxlmaier. Pour étendre la capacité du réseau, le technicien a ajouté une fibre optique et a vérifié les routeurs avec un analyseur de réseau.",
   },
   {
@@ -32,7 +32,7 @@ const notes = [
   },
   {
     date: '2024-08-22',
-    mood: 'détendue',
+    mood: 'sereine',
     note: "Nous avons rassemblé l'historique mensuel des scanners de chaque ligne de production et l'avons transmis au service technique.",
   },
   {
@@ -42,12 +42,12 @@ const notes = [
   },
   {
     date: '2024-08-26',
-    mood: 'détendue',
+    mood: 'sereine',
     note: "J'ai eu l'occasion d'assister à une réunion générale au cours de laquelle le directeur général a rassemblé tout le personnel pour discuter des futurs défis avec le nouveau client (BMW) et des points à prendre en considération. Le service IT a fait le nécessaire pour garantir le bon déroulement de la réunion. (installation de l'écran, des micros, des haut-parleurs…)",
   },
   {
     date: '2024-08-27',
-    mood: 'détendue',
+    mood: 'sereine',
     note: 'Journée de travail plus tranquille, marquée par le formatage de quelques appareils et la maintenance des autres.',
   },
   {
@@ -62,12 +62,12 @@ const notes = [
   },
   {
     date: '2024-09-01',
-    mood: 'détendue',
+    mood: 'sereine',
     note: "Tâche mensuelle : nous avons collecté l'état des imprimantes dans l'usine, les avons scannées, et les avons envoyées à l'entité locataire.",
   },
   {
     date: '2024-09-02',
-    mood: 'détendue',
+    mood: 'sereine',
     note: "Activation de quelques comptes Zscaler: c’est une solution de sécurité cloud qui protège contre les menaces en ligne et sécurise l'accès aux applications en filtrant le trafic Internet depuis le cloud.",
   },
   {
@@ -77,7 +77,7 @@ const notes = [
   },
   {
     date: '2024-09-04',
-    mood: 'détendue',
+    mood: 'sereine',
     note: "Nous avons passé un certain temps à chercher pourquoi nous n'arrivions pas à afficher le contenu d'un PC sur deux moniteurs dans la chaine de production avec des câbles HDMI. Nous avons découvert que le PC était de type shopfloor et non office, la solution était d’utiliser un splitter HDMI.",
   },
   {
@@ -97,12 +97,12 @@ const notes = [
   },
   {
     date: '2024-09-10',
-    mood: 'détendue',
+    mood: 'sereine',
     note: "Nous avons envoyé un écran géant et d'autres équipements à Sousse. J’ai consulté la documentation logistique, aidé à emballer les produits, et commencé à installer des supports pour PC et écrans dans la salle de formation.",
   },
   {
     date: '2024-09-11',
-    mood: 'enthousiaste',
+    mood: 'admirative',
     note: "Une belle fin de semaine de stage : nous avons installé 10 nouveaux PC dans la salle de formation et les configurés et dans un délai court. J'ai aussi assisté à la cérémonie de reconnaissance des employés en présence du CEO de DRÄXLMAIER Mr Brandl.",
   },
   {
